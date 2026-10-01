@@ -198,6 +198,8 @@
   .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;}
   .field .k{font-size:.75rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint);}
   .field .v{margin-top:8px;font-size:1.05rem;color:var(--ink);font-weight:500;}
+  a.field-link, a.v{display:block;text-decoration:none;}
+  a.v:hover{text-decoration:underline;color:var(--accent-strong);}
   .copybtn{
     margin-top:10px;font-size:.78rem;font-weight:600;
     background:none;border:none;color:var(--accent-strong);padding:0;
@@ -494,6 +496,31 @@
       <span class="chip">Data-informed decision making</span>
       <span class="chip">AI-assisted product workflows</span>
     </div>
+    <div class="eyebrow" style="margin-top:30px;margin-bottom:14px;">Tools &amp; technical</div>
+    <div class="chips">
+      <span class="chip">Figma</span>
+      <span class="chip">JIRA</span>
+      <span class="chip">JQL</span>
+      <span class="chip">Confluence</span>
+      <span class="chip">Contentful CMS</span>
+      <span class="chip">Miro</span>
+      <span class="chip">MURAL</span>
+      <span class="chip">Adobe Analytics</span>
+      <span class="chip">Tableau</span>
+      <span class="chip">Roadmunk</span>
+      <span class="chip">LaunchDarkly</span>
+      <span class="chip">Datadog</span>
+      <span class="chip">SQL</span>
+      <span class="chip">iOS / Xcode</span>
+      <span class="chip">Android</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Angular</span>
+      <span class="chip">React</span>
+      <span class="chip">REST APIs / YAML</span>
+      <span class="chip">Unix</span>
+      <span class="chip">GenAI / LLM integration</span>
+      <span class="chip">Claude Code</span>
+    </div>
   </section>
 
   <section id="projects">
@@ -536,12 +563,12 @@
     <div class="contact-grid">
       <div class="field">
         <div class="k">Email</div>
-        <div class="v" id="email-val">[ add your email ]</div>
+        <a class="v" id="email-val" href="mailto:chan.oliver@gmail.com">chan.oliver@gmail.com</a>
         <button class="copybtn" onclick="copyField('email-val')">Copy</button>
       </div>
       <div class="field">
         <div class="k">LinkedIn</div>
-        <div class="v" id="li-val">[ add your LinkedIn URL ]</div>
+        <a class="v" id="li-val" href="https://linkedin.com/in/chanoliver" target="_blank" rel="noopener">linkedin.com/in/chanoliver</a>
         <button class="copybtn" onclick="copyField('li-val')">Copy</button>
       </div>
       <div class="field">
