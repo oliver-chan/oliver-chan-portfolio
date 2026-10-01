@@ -124,7 +124,12 @@
     box-shadow:0 1px 3px rgba(0,0,0,.3);
     transition:transform .32s cubic-bezier(.4,0,.2,1);
   }
-  :root[data-theme="dark"] .toggle-knob{ transform:translateX(18px); }
+  :root[data-theme="dark"] .toggle-knob{
+    transform:translateX(18px);
+    background:var(--ink);
+    box-shadow:0 1px 4px rgba(0,0,0,.55);
+  }
+  :root[data-theme="dark"] .theme-toggle{ border-color:var(--ink-faint); }
 
   /* hero */
   .hero{padding-block:72px 48px;}
