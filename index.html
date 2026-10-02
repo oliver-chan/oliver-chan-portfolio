@@ -255,6 +255,10 @@
   .proj-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;}
   .proj h3{font-size:1.15rem;}
   .proj p{margin-top:10px;color:var(--ink-soft);font-size:.94rem;}
+  .proj .proj-label{
+    margin:20px 0 0;font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:.74rem;
+    font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);
+  }
 
   /* contact */
   .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;}
@@ -639,12 +643,14 @@
       <div class="proj-top">
         <h3><a href="https://hk-mahjong.netlify.app" target="_blank" rel="noopener">Mahjong scoring web app</a></h3>
       </div>
+      <h4 class="proj-label">Problem Space</h4>
       <p>
         I recently noticed within the Toronto social scene that mahjong has gotten more popular, with
         some clubs and lounges downtown even hosting regular mahjong nights. However, mahjong has a
         very non-intuitive scoring system, and almost everyone I met didn't know how to score their
         games properly. I grew up playing with my family, so it was a bit disappointing to see.
       </p>
+      <h4 class="proj-label">Opportunity</h4>
       <p>
         So, as a just-for-fun personal project, I built a scoring app to help facilitate games and
         teach people how to score properly. I used a room-code system, like the ones in a lot of
