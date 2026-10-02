@@ -42,6 +42,8 @@
     --accent-strong:#7A3306;
     --accent-soft:#F6E7DC;
     --accent-soft-fg:#B14A0B;
+    --link:#2A5FBF;
+    --link-hover:#1B4390;
     color-scheme:light;
   }
   @media (prefers-color-scheme: dark){
@@ -58,6 +60,8 @@
       --accent-strong:#F0AA75;
       --accent-soft:#3A2415;
       --accent-soft-fg:#F0AA75;
+      --link:#7BA4F0;
+      --link-hover:#A6C2F6;
       color-scheme:dark;
     }
   }
@@ -74,6 +78,8 @@
     --accent-strong:#F0AA75;
     --accent-soft:#3A2415;
     --accent-soft-fg:#F0AA75;
+    --link:#7BA4F0;
+    --link-hover:#A6C2F6;
     color-scheme:dark;
   }
 
@@ -91,7 +97,8 @@
     font-weight:700;letter-spacing:-0.01em;text-wrap:balance;margin:0;
   }
   .mono{font-variant-numeric:tabular-nums;}
-  a{color:var(--accent-strong);}
+  a{color:var(--link);}
+  a:hover{color:var(--link-hover);}
 
   /* top bar */
   .topbar{
@@ -269,7 +276,7 @@
   .field .k{font-size:.75rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint);}
   .field .v{margin-top:8px;font-size:1.05rem;color:var(--ink);font-weight:500;}
   a.field-link, a.v{display:block;text-decoration:none;}
-  a.v:hover{text-decoration:underline;color:var(--accent-strong);}
+  a.v:hover{text-decoration:underline;color:var(--link);}
   .copybtn{
     margin-top:10px;font-size:.78rem;font-weight:600;
     background:none;border:none;color:var(--accent-strong);padding:0;
